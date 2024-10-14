@@ -1,9 +1,132 @@
-*(
+@import url('https://fonts.googleapis.com/css2?family=Antone&family=Ubuntu:wght@300,400,500,700&display=swap');
+*, *::before, *::after{
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-    font-family: 'Jost', sans-serif;
-    list-syle: none;
-    text-decoration
-)
+    list-style: none;
+    text-decoration: none;
+}
+*{
+    font-family: 'Anton', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    color: #e71e9a;
+}
+.container{
+    max-width: 90%;
+    margin: 0 auto;
+}
+.row{
+    display: flex;
+}
+.flex{
+    flex-wrap: wrap;
+}
+.flex>*{
+    flex: 1 1 25em;
+}
+.column{
+    display: grid;
+}
+h4{
+    font-size: 19px;
+}
+h6{
+    font-size: 16px;
+}
+h1{
+    font-size: 41px;
+    line-height: 41px;
+}
+h2{
+    font-size: 35px;
+    line-height: 35px;
+}
+p{
+    font-size: 16px;
+    line-height: 20px;
+    padding: 20px 0 30px;
+}
+.nav{
+    position: sticky;
+    top: 0; right: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 50px;
+    background: #F6DED8;
+    box-shadow: 0 -2px 4px rgb(0, 0, 0, 0.2) inset;
+    z-index: 111;
+}
+.navlist{
+    display: flex;
+}
+.navlist li a{
+    font-size: 17px;
+    margin: 0 25px;
+    position: relative;
+}
+.navlist li a::before{
+    content: '';
+    position: absolute;
+    background: #93566F;
+    left: 0;
+    bottom: -3px;
+    height: 2px;
+    width: 0;
+    transition: .2s ease;
+}
+.navlist li a:hover:before{
+    width: 100%;
+}
+.logo img{
+    width: 45px;
+}
+.nav-icons a i{
+    font-size: 22px;
+    margin: 0 10px;
+}
+.home{
+    background: rgba(64, 18, 95, 0.8);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.home-img{
+    justify-content: center;
+}
+.home-img img{
+    max-height: 500px;
+    object-fit: contain;
+}
+.swiper-pagination{
+    max-width: max-content;
+}
+.home-content{
+    align-self: center;
+}.home-content div{
+    max-width: 550px;
+}
+.main-btn{
+    padding: 10px 20px;
+    border: 1px solid rgba(175, 1, 255, 0.483);
+    border-radius: 5px;
+    text-transform: capitalize;
+    font-size: 17px;
+    color: rgba(175, 1, 255, 0.483);
+}
+.main-btn:hover,
+.main-btn:active{
+    background: linear-gradient(270deg, rgba(175, 1, 255, 0.483), rgba(238, 130, 130, 0.480));
+}
+.swiper-pagination-bullet{
+    width: 33px;
+    height: 7px;
+    border-radius: 20px;
+}
+.swiper-pagination-bullet-active{
+    width: 33px;
+    height: 7px;
+    border-radius: 20px;
+    background: rgb(1, 1, 100);
+}
